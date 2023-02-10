@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #18181a;
+  font-family: 'Poppins';
+  color: #fff;
+}
+body::before {
+  content: '';
+  background-color: #7b7fb1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 400px;
+  margin: auto;
+}
+.page {
+  width: 750px;
+  margin: auto;
+}
+header {
+  margin-top: 70px;
+}
+header h1 {
+  color: #fff;
+  font-family: 'Staatliches';
+  letter-spacing: 2px;
+  font-size: 48px;
+  line-height: 60px;
+}
+header p {
+  color: #fff;
+  
+  line-height: 30px;
+  font-size: 20px;
+}
+
+form {
+  background-color: rgb(99, 100, 100);
+  width: 750px;
+  border-radius: 8px 8px 0 0;
+  padding: 64px;
+  margin: 40px auto 0 0;
+  display: flex;
+  flex-direction: column;
+}
+fieldset {
+  border: none;
+}
+fieldset legend {
+  font-size: 24px;
+  line-height: 34px;
+  border-bottom: 1px solid #808183;
+  width: 100%;
+  padding-bottom: 16px;
+  text-transform: uppercase;
+}
+
+
+
+.input-wrapper {
+  margin-top: 36px;
+}
+.input-wrapper label {
+  line-height: 24px;
+  font-size: 17px;
+}
+.input-wrapper input {
+  width: 622px;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid #608383;
+  margin: 8px 0 16px 0;
+  background-color: #d5d5d8;
+
+  outline: none;
+  font-size: 20px;
+  padding: 0 0 0 12px;
+  display: flex;
+}
+.two-columns {
+  display: flex;
+  gap: 22px;
+}
+.two-columns input {
+  width: 300px;
+}
+
+/*outro dia...*/
+
+.input-wrapper span {
+  color: rgb(160, 171, 182);
+  margin-left: 10px;
+}
+fieldset + fieldset {
+  margin-top: 30px;
+}
+
+.three-columns {
+  display: flex;
+  gap: 32px;
+}
+.three-columns > div:nth-child(1) #mentorship-date {
+  width: 300px;
+}
+#mentorship-begin {
+  width: 140px;
+  font-style: none;
+}
+
+
+footer {
+  background-color: #535971;
+  height: 160px;
+  border-radius: 0 0 8px 8px;
+  margin-bottom: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer button {
+  width: 608px;
+  height: 56px;
+  background-color: #FF5374;
+  border: none;
+  border-radius: 8px;
+  font-size: 23px;
+  color: #fff;
+  font-family: 'Staatliches';
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+
+  margin-top: 10px;
+}
+footer button:hover {
+  box-shadow: 0px 0px 6px #FF5374;
+}
+footer button:focus {
+  box-shadow: 0px 0px 6px #FF5374;
+}
+footer a:focus {
+  text-shadow: 0px 0px 6px #FF5374;
+}
+footer a {
+  text-decoration: none;
+  color: #FF5374;
+  outline: none;
+  margin-top: 20px;
+}
